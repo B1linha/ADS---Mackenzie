@@ -5,4 +5,6 @@ b) A quantidade de convites que devem ser vendidos para que se tenha um lucro de
 Custo = int(input('Digite o custo do espetáculo'))
 PreçoConvite = int(input('Digte o preço do convite'))
 ConvitesM = Custo/PreçoConvite
-
+Lucro = Custo*23/100/PreçoConvite
+print('A quantidade de convites mínimos é:', ConvitesM)
+print ('Para ter um lucro de 23% devem ser vendidos:', Lucro)
