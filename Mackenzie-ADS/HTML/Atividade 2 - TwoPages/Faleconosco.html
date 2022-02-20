@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fale Conosco</title>
 </head>
 <body>
-    
+    <form action=""method="post">
+        <label>Nome:</label><input type="text" maxlength="15"><br>
+        <label>E-mail</label><input type="email" maxlength="25"><br>
+        <label>Telefone</label><input type="tel" maxlength="15"><br>
+        <label>Assunto</label><input type="text" maxlength="50"><br>
+        <label>Mensagem</label><input type="text" maxlength="150"><br>
+        <input type="checkbox" id="assunto" name="assunto" value="urgente">
+        <label for="assunto">Urgente</label>
+        <input type="checkbox" id="assunto" name="assunto" value="não-urgente">
+        <label for="assunto">Não Urgente</label><br>
+        <input type="submit" value="enviar">
+        <input type="reset" value="deletar">
+    </form>
 </body>
 </html>
