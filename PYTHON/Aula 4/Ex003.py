@@ -1,0 +1,1 @@
+"""Faça um programa em Python que, dada a idade de um atleta que será digitada pelo usuário, apresente a mensagem da coluna CATEGORIA de acordo com a tabela abaixo, onde a categoria depende da idade de entrada."""
