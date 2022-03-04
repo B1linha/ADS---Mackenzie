@@ -1,6 +1,3 @@
-const main = (params) => {
-       //code here!!
-} 
  exibirNumerosPrimos(1000);
 
  function exibirNumerosPrimos(limite){
