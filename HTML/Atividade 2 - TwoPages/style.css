@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Prompt:wght@100&family=Sarala:wght@700&display=swap');
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+    color: white;
+    font-family: 'Prompt', sans-serif;
+}
+#cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+#cabecalho-img {
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#cabealho-titulo {
+    text-align: center;
+    justify-content: space-around;
+}

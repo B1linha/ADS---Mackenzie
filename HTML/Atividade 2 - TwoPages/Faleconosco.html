@@ -2,23 +2,24 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fale Conosco</title>
+    <link rel="stylesheet" href="style3.css">
 </head>
 <body>
-    <form action=""method="post">
-        <label>Nome:</label><input type="text" maxlength="15"><br>
-        <label>E-mail</label><input type="email" maxlength="25"><br>
-        <label>Telefone</label><input type="tel" maxlength="15"><br>
-        <label>Assunto</label><input type="text" maxlength="50"><br>
-        <label>Mensagem</label><input type="text" maxlength="150"><br>
-        <input type="checkbox" id="assunto" name="assunto" value="urgente">
-        <label for="assunto">Urgente</label>
-        <input type="checkbox" id="assunto" name="assunto" value="não-urgente">
-        <label for="assunto">Não Urgente</label><br>
-        <input type="submit" value="enviar">
-        <input type="reset" value="deletar">
-    </form>
+    <div id="area">
+        <form id="formulario" autocomplete="off">
+          <fieldset>
+            <legend>Formulário</legend>
+            <label>Nome:</label><input class="campo_nome" type="text"><br>
+            <label>Email:</label><input class="campo_email" type="password"><br>
+            <label>Telefone</label><input class="campo_tel" type="tel"><br>
+            <label>Assunto</label><input class="campo_assunto" type="text"><br>
+            <label>Mensagem:</label><br><textarea class="msg" cols="35" rows="8"></textarea><br>
+            <input class="btn_submit" type="submit" value="Enviar">
+            <input class="btn_delete" type="reset" value="Deletar">
+          </fieldset>
+        </form>
+      </div>
 </body>
 </html>

@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Prompt:wght@100&family=Sarala:wght@700&display=swap');
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+    color: white;
+    font-family: 'Prompt', sans-serif;    
+}
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+#P1 {
+    justify-content: space-around;
+    padding: 24px;
+}
+#Titulo-2 {
+    text-align: center;
+    padding: 24px;
+}
+#P2 {
+    justify-content: space-around;
+    padding: 24px;
+}
+#img {
+    height: 325px;
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px;
+}
+#H2 {
+    text-align: center;
+}
+#P3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px;
+}
