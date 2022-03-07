@@ -3,34 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Contador</title>
+    <title>Exercícios</title>
 </head>
 <body>
-    <header>
-        <h1> Vamos contar </h1>
-    </header>     
-    <section>
-        <div>
-            <p> Início:
-                <input type="number" name="txti" id="txti">
-            </p>
-            <p> Fim:
-                <input type="number" name="txtf" id="txtf">
-            </p>
-            <p> Passo:
-                <input type="number" name="txtp" id="txtp">
-            </p>
-            <p>
-                <input type="button" value="Contar" onclick="contar()">
-            </p>
-        </div>
-        <div id="res">
-
-        </div>
-    </section>
-    <footer>
-        <script src="script.js"></script>
-    </footer>
+    <form class="form" action="" method="get">
+        <p>Nome: <input type="text" class="nome"></p>
+        <p>Sobrenome: <input type="text" class="sobrenome"></p>
+        <p>Peso: <input type="text" class="peso"></p>
+        <p>Altura: <input type="text" class="altura"></p>
+        <button>Enviar</button>
+    </form>
+    <div class="res">
+        
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
