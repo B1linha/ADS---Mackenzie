@@ -1,23 +1,19 @@
-// IIFE  Immediately-invoked Function Expression
-function meuEscopo() {
-    const form = document.querySelector('.form'); // Se fosse ID usaria o #
-    const res = document.querySelector('.res');
-    const pessoas = []; // Criando array onde os dados vão ficar guardados
-    function recebeEventoForm (evento) {
-        evento.preventDefault(); //Evita que a página recarregue ao enviar form
-        const nome = form.querySelector('.nome');
-        const sobrenome = form.querySelector('.sobrenome');
-        const peso = form.querySelector('.peso');
-        const altura = form.querySelector('.altura');
-        pessoas.push({ // Adicionando valores na array pessoas com o push
-            nome: nome.value,
-            sobrenome: sobrenome.value,
-            peso: peso.value,
-            altura: altura.value
-        });
-        console.log(pessoas);
-        res.innerHTML += `<p> ${nome.value} ${sobrenome.value} ${peso.value} ${altura.value} </p>`
-    }
-    form.addEventListener('submit', recebeEventoForm); // Escuta o evento submit
+function contar() {
+    let inicio = document.getElementById('txti');
+    let fim = document.getElementById('txtf');
+    let passo = document.getElementById('txtp');
+    let res = document.getElementById('res');
+
+    if(inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
+        window.alert('[ERRO] Faltam dados!');
+    }else {
+        res.innerHTML = 'Contando:';
+        let i = Number(inicio.value);
+        let f = Number(fim.value);
+        let p = Number(passo.value);
+
+        for(let c = i; c <= f; c += p) {
+            res.innerHTML += ` ${c}`
+        }
+    };
 }
-meuEscopo(); 
