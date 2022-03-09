@@ -1,6 +1,6 @@
 function soma(x, y) { // x e y são os pârametros da function
     const resultado = x+y;
-    return resultado; // Encerra a function e ndica o que vai retornar da function
+    return resultado; // Encerra a function e indica o que vai retornar da function
 } // Tudo que está dentro do escopo da function não se pode acessar por fora e nem modificar
 const resultado = soma(2, 2);
 console.log(resultado)
