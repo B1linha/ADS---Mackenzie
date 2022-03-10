@@ -1,12 +1,12 @@
 // Capturar evento de submit do formulário
-const form = document.querySelector('#form');
+const form = document.querySelector('#form'); // capturei o formulário 
 
-form.addEventListener('submit', function (event) { // Evento para evitar a atualização da page
-    event.preventDefault(); 
+form.addEventListener('submit', function (event) { // Adicionando escutador do evento submit
+    event.preventDefault(); // previnindo atualização da page
     const Ipeso  = event.target.querySelector('#peso');
     const Ialtura  = event.target.querySelector('#altura');
 
-    const peso = Number(Ipeso.value);   // const pegando o value
+    const peso = Number(Ipeso.value);   // convertendo os inputs para number
     const altura = Number(Ialtura.value);
 
     if (!peso) { // diferente de number
@@ -46,7 +46,15 @@ function criaP () { // Function de criar parágrarfo
 function result (msg, isValid) { // Tudo que eu colocar no parâmetro msg vai aparecer na div res
     const resultado = document.querySelector('#res');
     resultado.innerHTML = ''; 
+
     const p = criaP();
+
+    if(isValid) {
+        p.classList.add('paragrafo-resultado');
+    }else {
+        p.classList.add('bad')
+    }
+
     p.innerHTML = msg;
     resultado.appendChild(p) // appendChild insere um elemento filho (p) no elemento pai (resultado)
 }   
