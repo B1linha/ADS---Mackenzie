@@ -46,15 +46,19 @@ function GetMonth (MonthParameter) {
     return MonthText;
     }
 }
+function zeroAEsquerda(num){
+    return num >= 10 ? num : `0${num}`;
+}
+
 let res = document.querySelector('#res')
-let data = new Date(2019, 09, 7, 22, 52)
+let data = new Date()
 let day = data.getDate();
 let semana = data.getDay();
 let dataSemana = GetDayWeak(semana);
 let mes = data.getMonth();
 let dataMes = GetMonth(mes)
 let dataAno = data.getFullYear();
-let hora = data.getHours();
-let minutes = data.getMinutes();
+let hora = zeroAEsquerda(data.getHours());
+let minutes = zeroAEsquerda(data.getMinutes());
 let resultado = (`${dataSemana}, ${day} de ${dataMes} de ${dataAno} ${hora}:${minutes}`)
 res.innerHTML = `${dataSemana}, ${day} de ${dataMes} de ${dataAno} ${hora}:${minutes}`
