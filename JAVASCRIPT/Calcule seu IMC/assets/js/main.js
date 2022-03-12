@@ -9,7 +9,7 @@ form.addEventListener('submit', function (event) { // Adicionando escutador do e
     const peso = Number(Ipeso.value);   // convertendo os inputs para number
     const altura = Number(Ialtura.value);
 
-    if (!peso) { // diferente de number
+    if (!peso) { // diferente de number 
         result('Peso inválido!', false);
         return;
     }

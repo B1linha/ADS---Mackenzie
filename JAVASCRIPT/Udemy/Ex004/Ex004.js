@@ -1,4 +1,4 @@
-//                            0            1                  2
+//                0          1           2
 const alunos = ['Lucas', 'Matheus', 'Guilherme',];
 alunos[0] = 'Eduardo'; // Modificando a array
 alunos[3] = 'Felipe';  // Adicionando índice na array
