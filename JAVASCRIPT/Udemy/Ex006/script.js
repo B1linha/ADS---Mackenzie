@@ -1,12 +1,16 @@
-// Escreva uma função que receba 2 números e retorne o maior deles
+// Escreva uma função chamada ePaisagem que receba dois argumentos, largura e altura de uma imagem (number). Retorne true se a imagem estiver no modo paisagem.
+// Paisagens tem no mínimo: 1080 x 608
 
-function Maior(num1, num2) {
-    console.log(Math.max(num1, num2));
+function ePaisagem(largura, altura) {
+    if (largura > altura) {
+        console.log(true)
+    }else {
+        console.log(false)
+    }
 }
-Maior(1, 10)
 
-// Outro métodos
+ePaisagem(100, 608)
 
-const max = (x, y) => x > y ? x : y;
-console.log(max(100, 200))
+// Método do professor
 
+const ePaisagem2 = (largura, altura) => largura > altura;
