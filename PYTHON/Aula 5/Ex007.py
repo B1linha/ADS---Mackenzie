@@ -5,18 +5,17 @@ Após esta informação, o usuário deve digitar a média de cada aluno da turma
 O programa deve calcular e mostrar, no final da entrada de dados, a média geral da turma.
 
 Obs.: Caso a quantidade informada de alunos da turma for igual a zero, o programa deve emitir a seguinte mensagem: NÃO HOUVE PROCESSAMENTO """
+
 ct = 0
-alunos = int(input('Digite a quantidade de alunos na turma'))
+mediaL = 0
+alunos = int(input())
+if alunos == 0:
+    print('NÃO HOUVE PROCESSAMENTO')
 while ct < alunos:
-    if alunos == 0:
-        print('NÃO HOUVE PROCESSAMENTO')
-        break
-    media = float(input('Digite a média do aluno'))
+    media = float(input())
     if media >= 6.0:
-        print('PARABÉNS VOCÊ ESTÁ APROVADO!')
-    else:
-        print('Você foi reprovado!')
-    media += media
-    mediaL = media/alunos
+        print('PARABÉNS VOCÊ ESTÁ APROVADO')
+    mediaL += media
     ct += 1
-print('Sua média é {:.1f} você está Reprovado!'.format(mediaL))
+if alunos > 0:
+    print(mediaL/alunos)
