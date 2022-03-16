@@ -1,7 +1,7 @@
 """ Elabore um programa em Python que mostre um menu para o usuário escolher uma operação ou sair do programa.
 O programa deve reconhecer a opção escolhida pelo usuário e solicitar a entrada de dois números caso a opção escolhida seja uma das operações. Depois de fazer a operação e mostrar o resultado , o programa deve continuar em execução para que o usuário selecione operação e outros números. O programa só terminará , caso o usuário digite 0. """
 
-while True:
+while True: # Repetição infinita que só para com um break
     print ('Soma .................... +'+
         'Subtração ............. - '+
         'Multiplicação......... *'+
