@@ -10,4 +10,8 @@ function mostraHora () {
 // No segundo parâmetro você seta o tempo em milissegundos
 const timer = setInterval(function () { // Usei uma function anônima
     console.log(mostraHora());
-}, 1000 ); 
+}, 1000 );
+
+setTimeout(function() {
+    clearInterval(timer);
+}, 10000)
