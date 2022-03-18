@@ -20,3 +20,9 @@ function carregar(){
         document.body.style.background = '#515154'
     }
 }
+
+function chamar() {
+    setInterval(function() {
+        carregar();
+    })
+}
