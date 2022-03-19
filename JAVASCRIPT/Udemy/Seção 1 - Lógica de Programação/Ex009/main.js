@@ -16,6 +16,8 @@ function botaoApagar(li) {
     li.innerHTML += ' '; // Da um espaço entre o texto e o botão
     const botaoApagar = document.createElement('button');
     botaoApagar.innerHTML = 'Apagar';
+    // botaoApagar.classList.add('apagar');
+    botaoApagar.setAttribute('class', 'apagar')
     li.appendChild(botaoApagar);
 } 
 
@@ -39,3 +41,10 @@ btnTarefa.addEventListener('click', function() {
     if (!inputTarefa.value) return;
     criaTarefa(inputTarefa.value)
 });
+
+document.addEventListener('click', function(event) {
+    const el = event.target;
+    if (el.classList.contains('apagar')) {
+        console.log('Apagar clicado')
+    }
+})
