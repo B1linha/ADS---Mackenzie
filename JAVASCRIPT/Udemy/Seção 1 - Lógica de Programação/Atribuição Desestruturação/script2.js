@@ -12,7 +12,7 @@ const pessoa = {
 
 //       Atribuição via desestruturação 
 const {sobrenome, idade: idadeL, altura = 1.73,} = pessoa;
-//        mudei o nome da var    criei uma var
+//            mudei o nome da chave e criei altura
 
 const {endereco: {rua, numero}} = pessoa // Acessando o objeto dentro do objeto
 const nome = pessoa.nome;

@@ -17,7 +17,7 @@ if (times > 3) {
 }
 
 console.log(greeter) // "say Hello instead"
-/* Se você usou greeterem outras partes do seu código, pode se surpreender com a saída que poderá obter. Isso provavelmente causará muitos bugs em seu código. É por isso lete constsão necessários.
+/* Se você usou greeter em outras partes do seu código, pode se surpreender com a saída que poderá obter. Isso provavelmente causará muitos bugs em seu código. É por isso let e const são necessários.
 */
 
 /* let tem um escopo de bloco, let pode ser atualizado mas não redeclarada.

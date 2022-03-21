@@ -50,7 +50,7 @@ function zeroAEsquerda(num){
     return num >= 10 ? num : `0${num}`;
 }
 
-let res = document.querySelector('#res')
+let resultado = document.querySelector('#res')
 let data = new Date()
 let day = data.getDate();
 let semana = data.getDay();
@@ -60,5 +60,4 @@ let dataMes = GetMonth(mes)
 let dataAno = data.getFullYear();
 let hora = zeroAEsquerda(data.getHours());
 let minutes = zeroAEsquerda(data.getMinutes());
-let resultado = (`${dataSemana}, ${day} de ${dataMes} de ${dataAno} ${hora}:${minutes}`)
-res.innerHTML = `${dataSemana}, ${day} de ${dataMes} de ${dataAno} ${hora}:${minutes}`
+resultado.innerHTML = `${dataSemana}, ${day} de ${dataMes} de ${dataAno} ${hora}:${minutes}`
