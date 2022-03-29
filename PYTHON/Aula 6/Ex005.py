@@ -1,0 +1,1 @@
+""" Faça um programa em Python que calcule e apresente o fatorial de um número inteiro e natural fornecido pelo usuário. """
