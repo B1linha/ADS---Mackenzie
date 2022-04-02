@@ -5,6 +5,16 @@ function criaCalculadora () {
 
         inicia() {
             this.cliqueBotoes();
+            this.pressionaEnter();
+        },
+        
+        pressionaEnter() {
+            // Usando arrow function para não perder o this, poderia usar bind também
+            this.display.addEventListener('keyup', e => {
+                if (e.keyCode === 13) {
+                    this.realizeDisplay();
+                }
+            });
         },
 
         clearDisplay() {
