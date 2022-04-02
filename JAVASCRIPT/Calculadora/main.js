@@ -2,11 +2,38 @@
 function criaCalculadora () {
     return {
         display: document.querySelector('.display'),
-        btnClear: document.querySelector('.btn-clear'),
 
         inicia() {
             this.cliqueBotoes();
         },
+
+        clearDisplay() {
+            this.display.value = '';
+        },
+
+        deleteDisplay() {
+            this.display.value = this.display.value.slice(0, -1);
+        },
+
+        realizeDisplay() {
+            let conta = this.display.value;
+
+            try {
+                conta = eval(conta);
+
+                if(!conta) {
+                    alert('Conta Inválida!')
+                    return;
+                }
+
+                this.display.value = conta;
+
+            } catch(e) {
+                alert('Conta Inválida!')
+                return;
+            }
+        },
+
 
         cliqueBotoes() {
             // this -> calculadora  
@@ -19,9 +46,18 @@ function criaCalculadora () {
                     this.btnParaDisplay(el.innerText);
                 };
 
-                if (el.classlist.contains('btn-clear')) {
-                    this.btnParaDisplay('')
+                if(el.classList.contains('btn-clear')) {
+                    this.clearDisplay();
                 }
+
+                if(el.classList.contains('btn-del')) {
+                    this.deleteDisplay();
+                }
+
+                if (el.classList.contains('btn-eq')) {
+                    this.realizeDisplay();
+                }
+
             }.bind(this)); // Fazendo a function usar o this da calculadora
         },
 
