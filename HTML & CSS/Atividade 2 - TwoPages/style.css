@@ -30,3 +30,26 @@ body {
     text-align: center;
     justify-content: space-around;
 }
+
+@media only screen and (max-width: 480px) {
+
+     .cabecalho {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    
+    .P1 {
+        height: 100%;
+        text-align: center;
+        text-align: justify;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        height: 100%;
+    }
+}
