@@ -30,6 +30,10 @@ body {
     text-align: center;
     justify-content: space-around;
 }
+footer {
+    text-align: right;
+    font-weight: bold;
+}
 
 @media only screen and (max-width: 480px) {
 

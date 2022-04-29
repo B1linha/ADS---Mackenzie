@@ -49,6 +49,6 @@ header {
 }
 
 #rodape {
-    position: relative;
-    left: 400px;
+    text-align: right;
+    font-weight: bold;
   }
