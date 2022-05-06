@@ -1,15 +1,22 @@
-/* Escolha uma cor predominante (if) e mostre:
-✔ a modalidade;
-✔ o time;
-✔ a quantidade de jogadores;
-✔ a imagem do Brasão.. */
+let times = [['Futebol', 'São Paulo', 12], ['Futebol', 'Corinthians'],]
 
-let res = document.querySelector('.res')
-let arrays = [['Basquete', 'Futebol', 'Vôlei'], ['São Paulo', 'Corinthias', 'Vasco'], [6, 12, 7], ['Dourado', 'Marrom', 'Azul']]
-res.innerHTML = `${arrays}`
+let preto = document.querySelector('.preto')
+let vermelho = document.querySelector('.vermelho')
+let branco = document.querySelector('.branco')
 
-res.innerHTML += `<br> ${arrays[0][1]} ${arrays[1][2]}, ${arrays[2][1]}, ${arrays[3][1]}`
+document.addEventListener('click', function(event) {
+    el = event.target
+    if (el.classList.contains('preto')) {
 
-res.innerHTML += `<br><img src="vasco-logo-1.png" alt="vasco" width="100" height="100">`
+    }
+    if (el.classList.contains('vermelho')) {
 
-document.body.style.background = '#b9846f'
+    }
+    if (el.classList.contains('branco')) {
+
+    }
+})
+
+function (array) {
+
+}
