@@ -1,10 +1,10 @@
 body {
     background-color: bisque;
 }
-.preto {
+.azul {
     border: none;
     background: var(--primary-color);
-    color: rgb(0, 0, 0);
+    color: rgb(0, 47, 255);
     font-size: 18px;
     font-weight: 700;
     height: 50px;
