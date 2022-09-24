@@ -1,0 +1,37 @@
+[
+    {
+        "Id": 1,
+        "Licitador": "ARTESP",
+        "Modalidade": "Concorrência",
+        "Numero": "01/2022-INTER",
+        "DataAbertura": "12/01/2023 14:15"
+    },
+    {
+        "Id": 2,
+        "Licitador": "CEETPS",
+        "Modalidade": "CONCURSO",
+        "Numero": "233/27/2022 - pss",
+        "DataAbertura": "20/12/2022 00:00"
+    },
+    {
+        "Id": 3,
+        "Licitador": "CEETPS",
+        "Modalidade": "CONCURSO",
+        "Numero": "024/30/2022 - pss",
+        "DataAbertura": "20/12/2022 00:00"
+    },
+    {
+        "Id": 4,
+        "Licitador": "FDE",
+        "Modalidade": "TOMADA DE PREÇOS",
+        "Numero": "69/00084/22/02",
+        "DataAbertura": "13/12/2022 10:30"
+    },
+    {
+        "Id": 5,
+        "Licitador": "CSBS",
+        "Modalidade": "LICITAÇÃO 13.303",
+        "Numero": "02.251/22",
+        "DataAbertura": "25/11/2022 09:30"
+    }
+]
